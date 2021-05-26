@@ -2,10 +2,12 @@ function getVowels(str) {
     let vowels = "aeiou";
     let vowelsArr = [];
 
-    for (let i = 0; i < str.length; i++) {
-        if (vowels.indexOf(str[i]) !== -1) {
-            if (vowelsArr.indexOf(str[i]) == -1) {
-                vowelsArr.push(str[i]);
+    let strLower = str.toLowerCase();
+
+    for (let i = 0; i < strLower.length; i++) {
+        if (vowels.indexOf(strLower[i]) !== -1) {
+            if (vowelsArr.indexOf(strLower[i]) == -1) {
+                vowelsArr.push(strLower[i]);
             }
         }
 
@@ -15,4 +17,4 @@ function getVowels(str) {
     console.log("Vowels: " + strVowels);
 }
 
-console.log(getVowels("umuzi"));
+console.log(getVowels("UMUZI"));
