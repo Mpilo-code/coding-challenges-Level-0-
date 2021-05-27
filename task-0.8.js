@@ -27,4 +27,4 @@ function timeString(num) {
 
 }
 
-console.log(timeString(133));
+(timeString(133));
