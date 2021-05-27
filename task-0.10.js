@@ -1,3 +1,4 @@
+
 function commonChar(str1, str2) {
     let common = "";
     let str1LowerCase = str1.toLowerCase();
@@ -15,4 +16,4 @@ function commonChar(str1, str2) {
     console.log("Common letter: " + common);
 }
 
-console.log(commonChar("HOUSE", "computers"));
+commonChar("HOUSE", "computers");
