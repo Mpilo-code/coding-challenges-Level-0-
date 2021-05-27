@@ -27,4 +27,4 @@ function timeString(num) {
 
 }
 
-(timeString(133));
+timeString(133);
