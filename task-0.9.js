@@ -17,4 +17,4 @@ function getVowels(str) {
     console.log("Vowels: " + strVowels);
 }
 
-console.log(getVowels("UMUZI"));
+getVowels("UMUZI");
