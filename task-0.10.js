@@ -13,6 +13,7 @@ function commonChar(str1, str2) {
 
     }
 
+    common = common.substring(0, common.length - 1);
     console.log("Common letter: " + common);
 }
 
