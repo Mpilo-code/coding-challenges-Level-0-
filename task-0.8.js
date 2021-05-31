@@ -7,19 +7,19 @@ function timeString(num) {
     hours = Math.floor(convertToTime); // this operation removes the decimal part of the value which are minutes
     minutes = Math.floor((convertToTime - hours) * 60) // subtracting hours from the value * 60 produces minutes
 
-    if (hours > 1) {
-        finalTime = hours + " hours, ";
-    } else {
+    if (hours === 1) {
         finalTime = hours + " hour, ";
+    } else {
+        finalTime = hours + " hours, ";
     }
 
-    if (minutes > 1) {
+    if (minutes === 1) {
 
-        finalTime = finalTime + minutes + " minutes";
+        finalTime = finalTime + minutes + " minute";
 
     } else {
 
-        finalTime = finalTime + minutes + " minute";
+        finalTime = finalTime + minutes + " minutes";
 
     }
 
@@ -27,4 +27,4 @@ function timeString(num) {
 
 }
 
-timeString(133);
+timeString(0);
